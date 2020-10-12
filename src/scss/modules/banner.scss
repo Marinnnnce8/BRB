@@ -1,0 +1,18 @@
+//----------  banner
+//------------------------------------------------------------------------------
+.banner {
+	margin-bottom: 25px;
+
+	>svg {
+		width: 330px;
+		height: 330px;
+		fill: $white;
+		position: absolute;
+		left: 66px;
+   	 	bottom: 355px;
+	}
+}
+
+.banner-inner {
+	padding: 0 0 210px 240px;
+}

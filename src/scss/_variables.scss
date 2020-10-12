@@ -1,0 +1,85 @@
+//----------  variables
+//------------------------------------------------------------------------------
+
+$font-default: 'Roboto',
+sans-serif;
+$bold: 700;
+$semi-bold: 600;
+$medium: 500;
+$light: 300;
+$thin: 100;
+$italic: italic;
+
+// Colors
+$white: #fff;
+$black: #000;
+$gray: #656565;
+$gray-light: #c0c9cf;
+$blue: #00b0eb;
+$blue-pastel: #00b0eb;
+$pink: #ea5197;
+$yellow: #ffef42;
+
+
+$site-colors: ('black': $black,
+	'white': $white) !default;
+
+//----------  Bootstrap grid
+//------------------------------------------------------------------------------
+
+$enable-grid-classes: true !default;
+
+//----------  Media queries breakpoints - Grid breakpoint
+//------------------------------------------------------------------------------
+
+$grid-breakpoints: (xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px) !default;
+
+//----------  Grid containers
+//------------------------------------------------------------------------------
+
+$container-max-widths: (sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px) !default;
+
+//----------  Grid columns
+//------------------------------------------------------------------------------
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+//
+// UIkit
+//
+
+// Breakpoints
+$breakpointSmall: 640px;
+$breakpointTabletPortrait: 768px;
+$breakpointTabletPortraitMax: ($breakpointTabletPortrait - 1);
+$breakpointTabletPortraitMin: ($breakpointTabletPortraitMax - 1);
+$breakpointMedium: 960px;
+$breakpointLarge: 1200px;
+$breakpointXlarge: 1600px;
+$breakpointXmedium: 1366px;
+$breakpointXmediumMin: ($breakpointXmedium - 1);
+$breakpointXsmallMax: ($breakpointSmall - 1);
+$breakpointSmallMax: ($breakpointMedium - 1);
+$breakpointMediumMax: ($breakpointLarge - 1);
+$breakpointLargeMax: ($breakpointXlarge - 1);
+$breakpointMobile: 479px;
+$breakpointMobileMin: 375px;
+
+// Spacing
+$ukGutter: 15px;
+
+$timing: 256ms;
+
+//
+// Theme
+//
+
+$themeVar: 0; // Example, not used

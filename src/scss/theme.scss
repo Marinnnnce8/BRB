@@ -1,0 +1,61 @@
+//
+// Theme
+//
+
+@import '_variables.scss';
+@import '_mixins.scss';
+
+// Base
+@import './base/fonts.scss';
+@import './base/typography.scss';
+
+// Layout / Helpers
+@import './helpers/helpers.scss';
+@import './helpers/keyframes.scss';
+@import './layout/buttons.scss';
+
+// UIkit
+@import './uikit/breadcrumb.scss';
+@import './uikit/form.scss';
+
+// Modules
+@import './modules/banner.scss';
+
+// Theme
+@import 'theme/base.scss';
+@import 'theme/header.scss';
+@import 'theme/footer.scss';
+@import 'theme/ie11.scss';
+@import 'theme/print.scss';
+
+
+// Template | Remove or Integrate
+
+// uikit/utility
+.uk-logo {
+	padding: 0;
+	min-height: 0;
+
+	img {
+		height: auto;
+		width: 100%;
+
+		&:last-of-type {
+			display: none;
+		}
+	}
+
+	@media (max-width: $breakpointTabletPortraitMax) {
+		img {
+			width: 100%;
+
+			&:first-of-type {
+				display: none;
+			}
+
+			&:last-of-type {
+				display: block;
+			}
+		}
+	}
+}

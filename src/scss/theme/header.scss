@@ -1,0 +1,21 @@
+.header {
+    background-color: $white;
+
+    .uk-navbar-nav>li {
+        &:not(:first-of-type)>a {
+            padding: 0 17px;
+            font-family: $font-default;
+            font-size: 22px;
+        }
+
+        &:first-of-type>a {
+            padding: 0 5px 0 15px;
+
+
+            svg {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+}
