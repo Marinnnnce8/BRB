@@ -14,15 +14,19 @@ $italic: italic;
 $white: #fff;
 $black: #000;
 $gray: #656565;
+$gray-dark: #696969;
 $gray-light: #c0c9cf;
 $blue: #00b0eb;
-$blue-pastel: #00b0eb;
+$blue-pastel: #699dc165;
 $pink: #ea5197;
 $yellow: #ffef42;
 
 
 $site-colors: ('black': $black,
-	'white': $white) !default;
+	'white': $white,
+	'blue': $blue,
+	'pink': $pink,
+	'yellow': $yellow) !default;
 
 //----------  Bootstrap grid
 //------------------------------------------------------------------------------
@@ -76,7 +80,8 @@ $breakpointMobileMin: 375px;
 // Spacing
 $ukGutter: 15px;
 
-$timing: 256ms;
+$speed: 256ms;
+$timing: ease-in-out;
 
 //
 // Theme

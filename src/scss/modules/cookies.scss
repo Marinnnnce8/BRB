@@ -1,0 +1,14 @@
+.cookies {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: $gray;
+    padding: 10px 25px 10px 40px;
+    z-index: 2;
+
+    .uk-button {
+        padding: 8px 31px;
+        font-weight: 400;
+    }
+}

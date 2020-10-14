@@ -24,17 +24,57 @@ input[type='submit'] {
 }
 
 .uk-button {
+	background-color: $blue;
 	align-items: center;
-	border-radius: 50px;
 	border: 0;
 	color: $white;
 	display: inline-flex;
-	font-size: 14px;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 10px 32px 11px 20px;
 	font-weight: $bold;
-	justify-content: space-between;
-	line-height: 1.3em;
-	padding: 15px 35px;
 	text-align: left;
 	text-transform: none;
-	transition: $timing ease-in-out;
+	transition: $speed $timing;
+
+	svg {
+		width: 16px;
+		height: 16px;
+		margin-right: 15px;
+		color: $white;
+		fill: $white;
+		transition: $speed $timing;
+		position: relative;
+		left: 0;
+	}
+
+	@include hover {
+		background-color: $blue;
+		color: $black;
+
+		svg {
+			left: 5px;
+		}
+	}
+}
+
+.uk-button-secondary {
+	background-color: $white;
+	color: $gray;
+
+	svg {
+		color: $blue;
+		fill: $blue;
+	}
+
+	@include hover {
+		background-color: $blue;
+		color: $black;
+
+		svg {
+			left: 5px;
+			color: $white;
+			fill: $white;
+		}
+	}
 }

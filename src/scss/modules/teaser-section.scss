@@ -1,0 +1,48 @@
+.teaser-section {
+    background-color: $blue-pastel;
+    padding: 93px 0;
+
+    .uk-card {
+        border-radius: 5px;
+        transition: $timing $speed;
+        padding: 30px 65px 42px;
+        min-height: 265px;
+
+        &::before,
+        svg {
+            transition: $timing $speed;
+        }
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: '';
+            height: 13px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+
+        svg {
+            color: $gray-light;
+            fill: $gray-light;
+        }
+
+        @include hover {
+            &::before {
+                height: 25px;
+            }
+
+            svg {
+                color: $gray-dark;
+                fill: $gray-dark;
+            }
+        }
+    }
+
+    .uk-card-title {
+        font-size: 30px;
+        line-height: 35px;
+        color: $gray;
+    }
+}

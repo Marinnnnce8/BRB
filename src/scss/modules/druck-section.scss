@@ -1,0 +1,29 @@
+// .druck-section {
+
+// }
+
+.druck-top {
+    padding: 90px 0 100px;
+}
+
+.druck-title,
+.druck-text {
+    max-width: 851px;
+    width: 100%;
+}
+
+.druck-title h2 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 45px;
+}
+
+.druck-text {
+    p {
+        color: $white;
+    }
+
+    .uk-button {
+        margin-top: 25px;
+    }
+}
