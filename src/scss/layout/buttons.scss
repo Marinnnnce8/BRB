@@ -72,9 +72,22 @@ input[type='submit'] {
 		color: $black;
 
 		svg {
-			left: 5px;
 			color: $white;
 			fill: $white;
+		}
+	}
+}
+
+.uk-button-default {
+	background-color: $pink;
+
+	@include hover {
+		background-color: $white;
+		color: $pink;
+
+		svg {
+			color: $pink;
+			fill: $pink;
 		}
 	}
 }

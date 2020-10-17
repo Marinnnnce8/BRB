@@ -23,6 +23,8 @@
 @import './modules/intro-section.scss';
 @import './modules/teaser-section.scss';
 @import './modules/druck-section.scss';
+@import './modules/lettershop-section.scss';
+@import './modules/project-progress.scss';
 @import './modules/cookies.scss';
 
 // Theme
@@ -61,21 +63,5 @@
 				display: block;
 			}
 		}
-	}
-}
-
-@media (min-width: $breakpointLarge) {
-	.uk-grid {
-		margin-left: -30px;
-
-		>* {
-			padding-left: 30px;
-		}
-	}
-
-	*+.uk-grid-margin,
-	.uk-grid+.uk-grid,
-	.uk-grid>.uk-grid-margin {
-		margin-top: 30px;
 	}
 }

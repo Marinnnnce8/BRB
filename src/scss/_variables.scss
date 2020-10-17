@@ -4,6 +4,7 @@
 $font-default: 'Roboto',
 sans-serif;
 $bold: 700;
+$black-weight: 800;
 $semi-bold: 600;
 $medium: 500;
 $light: 300;
@@ -16,8 +17,10 @@ $black: #000;
 $gray: #656565;
 $gray-dark: #696969;
 $gray-light: #c0c9cf;
+$gray-file: #eaeaea;
 $blue: #00b0eb;
 $blue-pastel: #699dc165;
+$blue-mid: #c3d8e6;
 $pink: #ea5197;
 $yellow: #ffef42;
 
@@ -26,6 +29,7 @@ $site-colors: ('black': $black,
 	'white': $white,
 	'blue': $blue,
 	'pink': $pink,
+	'gray': $gray,
 	'yellow': $yellow) !default;
 
 //----------  Bootstrap grid

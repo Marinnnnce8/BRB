@@ -28,6 +28,14 @@ h2 {
 	font-weight: $light;
 }
 
+h3,
+.uk-card-title {
+	font-size: 25px;
+	margin-bottom: 15px;
+	font-weight: $black-weight;
+	line-height: 30px;
+}
+
 p {
 	font-size: 18px;
 	line-height: 25px;
@@ -38,15 +46,20 @@ p {
 	font-size: 15px;
 }
 
-.uk-card-title {
-	display: block;
-	font-size: 20px;
-}
-
 img {
 	max-width: 100%;
 }
 
-ul li {
-	list-style-type: none;
+ul {
+	li {
+		font-weight: $light;
+		font-size: 20px;
+		line-height: 27px;
+		list-style-type: none;
+	}
+
+	&.alt {
+		font-size: 16px;
+		line-height: 20px;
+	}
 }

@@ -1,6 +1,10 @@
 //----------  banner
 //------------------------------------------------------------------------------
 .banner {
+	// min-height: calc(100vh - 126px);
+	// max-height: calc(100vh - 126px);
+	padding-bottom: 44%;
+	overflow: hidden;
 
 	>svg {
 		width: 330px;

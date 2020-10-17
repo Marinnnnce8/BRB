@@ -1,0 +1,28 @@
+.lettershop-section {
+    background-color: $blue-mid;
+
+    >svg {
+        width: 550px;
+        height: 550px;
+        color: $white;
+        fill: $white;
+        top: -87px;
+    }
+}
+
+.lettershop-intro {
+    padding: 63px 0 40px;
+
+    h2 {
+        font-size: 40px;
+        color: $black;
+    }
+}
+
+.lettershop-intro-text {
+    max-width: 1064px;
+}
+
+.lettershop-progress {
+    padding: 55px 0;
+}

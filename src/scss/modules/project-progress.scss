@@ -1,0 +1,17 @@
+.project-progress {
+    .uk-card {
+
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+            color: $white;
+            fill: $white;
+        }
+    }
+
+    .uk-card-title {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $black;
+    }
+}

@@ -25,6 +25,38 @@ abbr[title] {
 	text-decoration: none;
 }
 
+.files-icon {
+	position: relative;
+	width: 22px;
+	height: 31px;
+	border: 2px solid $blue;
+	display: inline-block;
+	background-color: inherit;
+
+	&::after {
+		background-color: inherit;
+		position: absolute;
+		width: 22px;
+		height: 31px;
+		border: 2px solid $blue;
+		content: '';
+		left: -6px;
+		top: 3px;
+		z-index: 1;
+	}
+}
+
+.intro-inline {
+	span {
+		margin-bottom: 5px;
+		color: $white;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 5px 13px 5px 7px;
+		display: inline-block;
+	}
+}
+
 // Theming and colors iterator
 @each $colors-name in $site-colors {
 	$name: nth($colors-name, 1);
