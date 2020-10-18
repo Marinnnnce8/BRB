@@ -18,6 +18,7 @@ $gray: #656565;
 $gray-dark: #696969;
 $gray-produkte: #969696;
 $gray-light: #c0c9cf;
+$gray-alt: #ededed;
 $gray-file: #eaeaea;
 $blue: #00b0eb;
 $blue-light: #b3e7f9;
@@ -33,6 +34,7 @@ $site-colors: ('black': $black,
 	'blue': $blue,
 	'pink': $pink,
 	'gray': $gray,
+	'gray-alt': $gray-alt,
 	'yellow': $yellow) !default;
 
 //----------  Bootstrap grid

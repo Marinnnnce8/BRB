@@ -1,0 +1,66 @@
+.footer-top {
+    padding: 82px 0 100px;
+
+    h2 {
+        color: $gray;
+        margin-bottom: 55px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 48px;
+    }
+
+    span {
+        color: $black;
+    }
+
+    img {
+        width: 53px;
+        margin: 0 auto 10px;
+    }
+
+    div:not(.uk-flex-column) {
+        span:not(.uk-text-bold) {
+            display: block;
+            font-weight: $light;
+            font-size: 23px;
+            line-height: 30px;
+        }
+    }
+
+    .addresse {
+
+        span {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 42px 0 49px;
+
+    a {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: $light;
+        color: $white;
+
+        &:not(:last-of-type):not(:nth-last-of-type(2)) {
+            margin-right: 90px;
+        }
+
+        &:nth-last-of-type(2) {
+            margin-right: 66px;
+        }
+
+        svg {
+            color: $white;
+            fill: $white;
+            width: 34px;
+            height: 34px;
+            margin-left: 20px;
+        }
+    }
+}

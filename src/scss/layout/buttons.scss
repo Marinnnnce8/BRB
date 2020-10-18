@@ -24,18 +24,25 @@ input[type='submit'] {
 }
 
 .uk-button {
-	background-color: $blue;
 	align-items: center;
 	border: 0;
-	color: $white;
 	display: inline-flex;
 	font-size: 18px;
 	line-height: 22px;
-	padding: 10px 32px 11px 20px;
-	font-weight: $bold;
 	text-align: left;
 	text-transform: none;
 	transition: $speed $timing;
+
+	&:not(.uk-button-text) {
+		background-color: $blue;
+		color: $white;
+		font-weight: $bold;
+		padding: 10px 32px 11px 20px;
+	}
+
+	&.uk-text-button {
+		font-weight: $light;
+	}
 
 	svg {
 		width: 16px;
@@ -49,11 +56,13 @@ input[type='submit'] {
 	}
 
 	@include hover {
-		background-color: $blue;
-		color: $black;
+		&:not(.uk-button-text) {
+			background-color: $blue;
+			color: $black;
 
-		svg {
-			left: 5px;
+			svg {
+				left: 5px;
+			}
 		}
 	}
 }
