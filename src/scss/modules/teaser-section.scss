@@ -9,8 +9,9 @@
         min-height: 265px;
 
         &::before,
-        svg {
-            transition: $timing $speed;
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+            transition: inherit;
         }
 
         &::before {
@@ -23,7 +24,8 @@
             bottom: 0;
         }
 
-        svg {
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
             color: $gray-light;
             fill: $gray-light;
         }
@@ -33,9 +35,14 @@
                 height: 25px;
             }
 
-            svg {
+            .uk-svg,
+            .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
                 color: $gray-dark;
                 fill: $gray-dark;
+
+                * {
+                    fill: inherit;
+                }
             }
         }
     }

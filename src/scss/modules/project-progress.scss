@@ -1,10 +1,39 @@
 .project-progress {
+    padding: 55px 0;
+
+    .uk-grid>div {
+        &:nth-of-type(odd) .arrow {
+            top: 0;
+        }
+
+        &:nth-of-type(even) .arrow {
+            bottom: 0;
+        }
+    }
+
     .uk-card {
 
-        .uk-svg,
-        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    .uk-card-media-top {
+        margin-bottom: 20px;
+
+        .arrow {
             color: $white;
             fill: $white;
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            left: calc(100% + 18px);
+
+            &.green {
+                color: $green;
+                fill: $green;
+            }
         }
     }
 
@@ -13,5 +42,25 @@
         line-height: 24px;
         font-weight: 400;
         color: $black;
+    }
+
+    @media (min-width: $breakpointLarge) {
+
+        .uk-grid-column-large,
+        .uk-grid-large {
+            margin-left: -110px;
+
+            >* {
+                padding-left: 110px;
+            }
+        }
+
+        *+.uk-grid-margin-large,
+        .uk-grid+.uk-grid-large,
+        .uk-grid+.uk-grid-row-large,
+        .uk-grid-large>.uk-grid-margin,
+        .uk-grid-row-large>.uk-grid-margin {
+            margin-top: 110px;
+        }
     }
 }

@@ -9,8 +9,6 @@
 }
 
 .druck-title h2 {
-    font-size: 40px;
-    line-height: 50px;
     margin-bottom: 45px;
 }
 
@@ -27,50 +25,29 @@
 .druck-middle {
     padding: 165px 0 50px;
 
-    .uk-grid {
-        margin-bottom: 65px;
+    >svg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 5px;
+        color: $blue-light;
+        fill: $blue-light;
+        width: 277px;
+        height: auto;
     }
 
-    h3 {
-        color: $blue;
-    }
-
-    ul {
-        margin-top: 15px;
-    }
-
-    li {
-        color: $black;
-
-        &:not(.alt) {
-            padding-left: 22px;
-        }
-
-        svg {
-            width: 13px;
-            height: 13px;
-            top: 7px;
-        }
-
-        &.alt {
-            display: inline-flex;
-            padding: 10px 15px 10px 22px;
-            background-color: $gray-file;
-
-            span {
-                font-size: 16px;
-                display: block;
-                line-height: 20px;
-            }
-        }
+    h2 {
+        margin-bottom: 85px;
+        max-width: 415px;
     }
 }
 
 .druck-bottom {
-    padding: 48px 0 285px;
+    padding: 48px 0 125px;
 
     h2 {
         margin-bottom: 30px;
+        line-height: 60px;
     }
 
     p {
@@ -84,7 +61,18 @@
     }
 
     .uk-card-media-top {
-        min-height: 415px;
-        border-bottom: 19px solid $blue;
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            content: '';
+            border-bottom: 19px solid $blue;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }

@@ -55,6 +55,12 @@ abbr[title] {
 		padding: 5px 13px 5px 7px;
 		display: inline-block;
 	}
+
+	&.inverse {
+		span {
+			color: $black;
+		}
+	}
 }
 
 // Theming and colors iterator

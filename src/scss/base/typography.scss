@@ -23,8 +23,8 @@ h1 {
 }
 
 h2 {
-	font-size: 50px;
-	line-height: 60px;
+	font-size: 40px;
+	line-height: 50px;
 	font-weight: $light;
 }
 
@@ -34,6 +34,12 @@ h3,
 	margin-bottom: 15px;
 	font-weight: $black-weight;
 	line-height: 30px;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: $medium;
+	color: $black;
 }
 
 p {

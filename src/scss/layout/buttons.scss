@@ -81,6 +81,16 @@ input[type='submit'] {
 .uk-button-default {
 	background-color: $pink;
 
+	&.yellow {
+		background-color: $yellow;
+		color: $black;
+
+		svg {
+			color: $black;
+			fill: $black;
+		}
+	}
+
 	@include hover {
 		background-color: $white;
 		color: $pink;
@@ -88,6 +98,16 @@ input[type='submit'] {
 		svg {
 			color: $pink;
 			fill: $pink;
+		}
+
+		&.yellow {
+			background-color: $gray-produkte;
+			color: $yellow;
+
+			svg {
+				color: $yellow;
+				fill: $yellow;
+			}
 		}
 	}
 }
