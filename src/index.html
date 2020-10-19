@@ -33,37 +33,63 @@
 		<nav class='uk-navbar-container uk-navbar-transparent uk-navbar' data-uk-navbar>
 
 			<div class='uk-navbar-left'>
-				<a href='./index.html' class='uk-navbar-item uk-logo'>
-					<img src='./img/bmb-favicon.svg' alt='BMB Druck & Service Logo'>
+				<a href='./index.html' class='uk-navbar-item uk-logo uk-padding-remove'>
+					<img src='./img/award.jpg' alt='BMB Druck & Service Logo'>
 				</a>
 			</div>
 
 			<div class='uk-navbar-right'>
-				<ul class="uk-navbar-nav" class="uk-visible@m">
-					<li class="uk-active"><a href="./index.html" aria-label="Go to Homepage"><svg viewBox="0 0 512 512">
+				<ul class="uk-navbar-nav">
+					<li class="uk-active">
+						<a href="./index.html" aria-label="Go to Homepage">
+							<svg viewBox="0 0 512 512">
 								<use xlink:href="./symbol/icons.svg#navigation-home"></use>
-							</svg></a></li>
+							</svg>
+						</a>
+					</li>
 					<li><a class="uk-text-uppercase" href="#druck" data-uk-scroll>DRUCK</a></li>
 					<li><a class="uk-text-uppercase" href="#lettershop" data-uk-scroll>LETTERSHOP</a></li>
 					<li><a class="uk-text-uppercase" href="#produkte" data-uk-scroll>PRODUKTE</a></li>
 					<li><a class="uk-text-uppercase" href="#uber-uns" data-uk-scroll>ÜBER UNS</a></li>
 					<li><a class="uk-text-uppercase" href="#kontakt" data-uk-scroll>KONTAKT</a></li>
 				</ul>
-				<button class="uk-hidden@m" uk-toggle="target: #nav-menu" aria-label="Open menu navigation"></button>
+				<div id="offcanvas-nav-primary" class="uk-width-1-1" data-uk-offcanvas>
+					<div class="uk-offcanvas-bar uk-width-1-1 uk-flex uk-flex-middle uk-flex-column">
+
+						<ul class="uk-nav uk-nav-center uk-margin-auto-vertical">
+							<li class="uk-active"><a class="uk-text-light" href="./index.html">Start</a></li>
+							<li><a class="uk-text-bold" href="#druck" data-uk-scroll>Druck</a></li>
+							<li><a class="uk-text-bold" href="#lettershop" data-uk-scroll>Lettershop</a></li>
+							<li><a class="uk-text-bold" href="#produkte" data-uk-scroll>Produkte</a></li>
+							<li><a class="uk-text-bold" href="#uber-uns" data-uk-scroll>Über Uns</a></li>
+							<li><a class="uk-text-bold" href="#kontakt" data-uk-scroll>Kontakt</a></li>
+							<li><a class="uk-text-light" href="./impressum.html">Impressum</a></li>
+							<li><a class="uk-text-light" href="./datenschutz.html">Datenschutz</a></li>
+						</ul>
+					</div>
+				</div>
+				<button class="uk-button burger-menu uk-flex uk-flex-center uk-flex-middle"
+					data-uk-toggle="target: #offcanvas-nav-primary" aria-label="Navigation öffnen">
+					<span>
+						<span role="presentation"></span>
+						<span role="presentation"></span>
+						<span role="presentation"></span>
+					</span>
+				</button>
 			</div>
 		</nav>
 	</header>
 	<!-- MAIN HEADER -->
 
 	<main>
-		<a class="uk-button button-scroll uk-flex uk-flex-center uk-flex-middle with-cookie uk-padding-remove" href="#top" data-uk-scroll
-			aria-label="Hochscrollen">
+		<a class="uk-button button-scroll uk-flex uk-flex-center uk-flex-middle with-cookie uk-padding-remove"
+			href="#top" data-uk-scroll aria-label="Hochscrollen">
 			<svg viewBox="0 0 24 24">
 				<use xlink:href="./symbol/icons.svg#button-totoparrow"></use>
 			</svg>
 		</a>
 
-		<div class="cookies uk-flex uk-flex-between uk-flex-middle">
+		<!-- <div class="cookies uk-flex uk-flex-between uk-flex-middle">
 			<div class="uk-light uk-width-1-2@m">
 				<p class="uk-text-small uk-text-light uk-margin-remove">Diese Website verwendet Cookies. Nähere
 					Informationen in unserer
@@ -79,7 +105,7 @@
 					<button class="uk-button uk-button-primary">Datenschutzerklärung</button>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 
 		<section class="banner uk-background-cover uk-position-relative" data-uk-img
 			style="background-image: url('./img/banner-img.png');">

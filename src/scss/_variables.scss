@@ -71,11 +71,11 @@ $grid-gutter-width: 30px !default;
 
 // Breakpoints
 $breakpointSmall: 640px;
-$breakpointTabletPortrait: 768px;
+$breakpointTabletPortrait: 769px;
 $breakpointTabletPortraitMax: ($breakpointTabletPortrait - 1);
 $breakpointTabletPortraitMin: ($breakpointTabletPortraitMax - 1);
-$breakpointMedium: 960px;
-$breakpointLarge: 1200px;
+$breakpointMedium: 1025px;
+$breakpointLarge: 1441px;
 $breakpointXlarge: 1600px;
 $breakpointXmedium: 1366px;
 $breakpointXmediumMin: ($breakpointXmedium - 1);
@@ -83,7 +83,7 @@ $breakpointXsmallMax: ($breakpointSmall - 1);
 $breakpointSmallMax: ($breakpointMedium - 1);
 $breakpointMediumMax: ($breakpointLarge - 1);
 $breakpointLargeMax: ($breakpointXlarge - 1);
-$breakpointMobile: 479px;
+$breakpointMobile: 415px;
 $breakpointMobileMin: 375px;
 
 // Spacing

@@ -1,6 +1,6 @@
 .header {
     background-color: $white;
-    padding: 0 70px;
+    padding: 28px 15px 28px 14px;
     box-shadow: 0 1px 3px rgba($black, .161);
 
     .uk-logo {
@@ -77,6 +77,28 @@
                     fill: $blue;
                 }
             }
+        }
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 41px 46px 41px 56px;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding: 41px 46px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 41px 63px 41px 70px;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 42px 63px 42px 60px;
+    }
+
+    @media (max-width: $breakpointSmallMax) {
+        .uk-navbar-nav {
+            display: none;
         }
     }
 }

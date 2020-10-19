@@ -17,6 +17,7 @@
 // UIkit
 @import './uikit/breadcrumb.scss';
 @import './uikit/form.scss';
+@import './uikit/offcanvas.scss';
 
 // Modules
 @import './modules/banner.scss';
@@ -29,6 +30,7 @@
 @import './modules/produkte-section.scss';
 @import './modules/about-section.scss';
 @import './modules/reference-section.scss';
+@import './modules/burger-menu.scss';
 @import './modules/cookies.scss';
 
 // Theme
@@ -49,24 +51,7 @@
 	img {
 		height: auto;
 		width: 100%;
-
-		&:last-of-type {
-			display: none;
-		}
-	}
-
-	@media (max-width: $breakpointTabletPortraitMax) {
-		img {
-			width: 100%;
-
-			&:first-of-type {
-				display: none;
-			}
-
-			&:last-of-type {
-				display: block;
-			}
-		}
+		max-width: 59px;
 	}
 }
 
