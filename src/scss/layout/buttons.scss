@@ -32,16 +32,16 @@ input[type='submit'] {
 	text-align: left;
 	text-transform: none;
 	transition: $speed $timing;
+	background-color: $blue;
+	color: $white;
+	font-weight: $bold;
+	padding: 10px 32px 11px 20px;
 
-	&:not(.uk-button-text) {
-		background-color: $blue;
-		color: $white;
-		font-weight: $bold;
-		padding: 10px 32px 11px 20px;
-	}
-
-	&.uk-text-button {
+	&.uk-button-text {
+		background-color: transparent;
 		font-weight: $light;
+		padding: 0;
+		color: $black;
 	}
 
 	svg {
@@ -56,13 +56,15 @@ input[type='submit'] {
 	}
 
 	@include hover {
-		&:not(.uk-button-text) {
-			background-color: $blue;
-			color: $black;
+		background-color: $blue;
+		color: $black;
 
-			svg {
-				left: 5px;
-			}
+		&.uk-button-text {
+			background-color: transparent;
+		}
+
+		svg {
+			left: 5px;
 		}
 	}
 }
@@ -118,5 +120,29 @@ input[type='submit'] {
 				fill: $yellow;
 			}
 		}
+	}
+}
+
+.button-scroll {
+	background-color: $gray;
+	border: 1px solid $white;
+	position: fixed;
+	bottom: 40px;
+	right: 22px;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	z-index: 2;
+
+	svg {
+		width: 19px;
+		height: 19px;
+		color: $white;
+		fill: $white;
+		margin: 0;
+	}
+
+	&.with-cookie {
+		bottom: 138px;
 	}
 }

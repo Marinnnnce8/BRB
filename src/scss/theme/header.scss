@@ -1,20 +1,81 @@
 .header {
     background-color: $white;
+    padding: 0 70px;
+    box-shadow: 0 1px 3px rgba($black, .161);
+
+    .uk-logo {
+        padding: 44px 0;
+    }
 
     .uk-navbar-nav>li {
+        padding: 0 17px;
+
+        a {
+            color: $gray;
+            position: relative;
+            font-weight: 400;
+            min-height: 0;
+            padding: 0;
+        }
+
         &:not(:first-of-type)>a {
-            padding: 0 17px;
+            padding: 0;
             font-family: $font-default;
             font-size: 22px;
+            line-height: 25px;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background-color: $blue;
+            }
+
+            &:before {
+                opacity: 0;
+                transform: translateY(- $distance);
+                transition: transform 0s $easeOutBack, opacity 0s;
+            }
+
+            &:after {
+                opacity: 0;
+                transform: translateY($distance/2);
+                transition: transform $duration $easeOutBack, opacity $duration;
+            }
+
+            @include hover {
+
+                &:before,
+                &:after {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                &:before {
+                    transition: transform $duration $easeOutBack, opacity $duration;
+                }
+
+                &:after {
+                    transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+                }
+            }
         }
 
         &:first-of-type>a {
-            padding: 0 5px 0 15px;
-
-
             svg {
                 width: 23px;
                 height: 23px;
+            }
+
+            @include hover {
+                svg {
+                    color: $blue;
+                    fill: $blue;
+                }
             }
         }
     }

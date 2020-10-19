@@ -10,6 +10,7 @@
 
 .druck-title h2 {
     margin-bottom: 45px;
+    color: $white;
 }
 
 .druck-text {
@@ -19,6 +20,15 @@
 
     .uk-button {
         margin-top: 25px;
+
+        @include hover {
+            background-color: $white;
+
+            svg {
+                color: $blue;
+                fill: $blue;
+            }
+        }
     }
 }
 

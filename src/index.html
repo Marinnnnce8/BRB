@@ -7,7 +7,7 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 	<meta name='format-detection' content='telephone=no'>
 
-	<title>BMB Druck & Service</title>
+	<title>BMB Druck & Service GmbH - Startseite</title>
 	<meta name='description' content='This is a meta description'>
 
 	<!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"> -->
@@ -18,36 +18,36 @@
 	<!-- <link rel="manifest" href="./favicon/site.webmanifest"> -->
 	<!-- <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#298fc2">
 	<link rel="shortcut icon" href="./favicon/favicon.ico"> -->
-	<meta name="apple-mobile-web-app-title" content="BMB Druck & Service">
-	<meta name="application-name" content="BMB Druck & Service">
+	<meta name="apple-mobile-web-app-title" content="BMB Druck & Service GmbH">
+	<meta name="application-name" content="BMB Druck & Service GmbH">
 	<meta name="msapplication-TileColor" content="#298fc2">
 	<meta name="theme-color" content="#ffffff">
 	<link rel='stylesheet' href='css/uikit.min.css' />
 	<link rel='stylesheet' href='css/theme.min.css' />
 </head>
 
-<body id="scroll-top">
+<body id="top">
 
 	<!-- MAIN HEADER -->
 	<header class='header header-main' data-uk-sticky='{"animation":"uk-animation-slide-top","show-on-up":true}'>
 		<nav class='uk-navbar-container uk-navbar-transparent uk-navbar' data-uk-navbar>
 
 			<div class='uk-navbar-left'>
-				<a href='#' class='uk-navbar-item uk-logo'>
+				<a href='./index.html' class='uk-navbar-item uk-logo'>
 					<img src='./img/bmb-favicon.svg' alt='BMB Druck & Service Logo'>
 				</a>
 			</div>
 
 			<div class='uk-navbar-right'>
 				<ul class="uk-navbar-nav" class="uk-visible@m">
-					<li class="uk-active"><a href="#" aria-label="Go to Homepage"><svg viewBox="0 0 512 512">
+					<li class="uk-active"><a href="./index.html" aria-label="Go to Homepage"><svg viewBox="0 0 512 512">
 								<use xlink:href="./symbol/icons.svg#navigation-home"></use>
 							</svg></a></li>
-					<li><a class="uk-text-uppercase" href="#">Druck</a></li>
-					<li><a class="uk-text-uppercase" href="#" data-uk-scroll>LETTERSHOP</a></li>
-					<li><a class="uk-text-uppercase" href="#" data-uk-scroll>PRODUKTE</a></li>
-					<li><a class="uk-text-uppercase" href="#" data-uk-scroll>ÜBER UNS</a></li>
-					<li><a class="uk-text-uppercase" href="#" data-uk-scroll>KONTAKT</a></li>
+					<li><a class="uk-text-uppercase" href="#druck" data-uk-scroll>DRUCK</a></li>
+					<li><a class="uk-text-uppercase" href="#lettershop" data-uk-scroll>LETTERSHOP</a></li>
+					<li><a class="uk-text-uppercase" href="#produkte" data-uk-scroll>PRODUKTE</a></li>
+					<li><a class="uk-text-uppercase" href="#uber-uns" data-uk-scroll>ÜBER UNS</a></li>
+					<li><a class="uk-text-uppercase" href="#kontakt" data-uk-scroll>KONTAKT</a></li>
 				</ul>
 				<button class="uk-hidden@m" uk-toggle="target: #nav-menu" aria-label="Open menu navigation"></button>
 			</div>
@@ -56,6 +56,12 @@
 	<!-- MAIN HEADER -->
 
 	<main>
+		<a class="uk-button button-scroll uk-flex uk-flex-center uk-flex-middle with-cookie uk-padding-remove" href="#top" data-uk-scroll
+			aria-label="Hochscrollen">
+			<svg viewBox="0 0 24 24">
+				<use xlink:href="./symbol/icons.svg#button-totoparrow"></use>
+			</svg>
+		</a>
 
 		<div class="cookies uk-flex uk-flex-between uk-flex-middle">
 			<div class="uk-light uk-width-1-2@m">
@@ -143,8 +149,8 @@
 			</div>
 		</section>
 
-		<section class="druck-section">
-			<div class="druck-top bg-blue uk-light uk-text-center">
+		<section class="druck-section" id="druck">
+			<div class="druck-top bg-blue uk-text-center">
 				<div class="druck-title uk-margin-auto">
 					<h2>Schnell, individuell & zuverlässig: Wir liefern Ihnen exzellente Qualität und finden auch für
 						Ihren
@@ -499,7 +505,7 @@
 			</div>
 		</section>
 
-		<section class="lettershop-section">
+		<section class="lettershop-section" id="lettershop">
 			<span class="lettershop-banner" role="presentation"
 				style="background-image: url('./img/lettershop.jpg');"></span>
 			<div class="lettershop-intro uk-position-relative uk-text-center">
@@ -842,7 +848,7 @@
 			</div>
 		</section>
 
-		<section class="produkte-section">
+		<section class="produkte-section" id="produkte">
 			<div class="produkte-intro uk-position-relative uk-text-center">
 				<img class="uk-position-top-center" src="./img/intro-products.svg" data-uk-svg alt="image">
 				<div class="uk-container">
@@ -998,7 +1004,7 @@
 			</div>
 		</section>
 
-		<section class="about-section">
+		<section class="about-section" id="uber-uns">
 			<div data-uk-grid class="uk-child-width-1-2@m uk-grid-collapse about-box uk-margin-small-bottom">
 				<div>
 					<div class="uk-height-1-1 about-banner">
@@ -1045,85 +1051,199 @@
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_bmw.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/award.jpg" data-uk-img alt="image">
+							<img src="./img/references_bnd.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/intro-products.svg" data-uk-img alt="image">
+							<img src="./img/references_citroen.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/bmb-favicon.svg" data-uk-img alt="image">
+							<img src="./img/references_clasen.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_clasquin.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_daab.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_dbl.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_designer_outlet.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_dpag.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_dpd.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_druckpartner.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_dtf.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_ff.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
-							<img src="./img/references_placeholder.jpg" data-uk-img alt="image">
+							<img src="./img/references_forsa.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_grow.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_here.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_kia.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_mercedes_benz.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_mini.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_navteq.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_nissan.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_nrw.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_peugeot.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_pure.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_ratioline.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_rheinbahn.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_sopexa.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_stadtwerke_dssd.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_targobank.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_van_acken_druck.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_van_acken_fundraising.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_volvo.jpg" data-uk-img alt="image">
+						</div>
+					</div>
+					<div>
+						<div class="uk-card bg-white uk-flex uk-flex-center">
+							<a href="#" class="uk-position-cover uk-position-z-index" aria-label="Gehe zu..."></a>
+							<img src="./img/references_vw.jpg" data-uk-img alt="image">
 						</div>
 					</div>
 				</div>
@@ -1133,7 +1253,7 @@
 	</main>
 
 	<!-- VERSION 2 -->
-	<footer class="footer">
+	<footer class="footer" id="kontakt">
 		<div class="footer-top uk-text-center">
 			<div class="uk-container">
 				<h2>So erreichen Sie uns</h2>
@@ -1184,8 +1304,8 @@
 					<a href="#">Impressum</a>
 					<a href="#">Copyright 2020 © BMB Druck & Service</a>
 					<a href="#">Folgen Sie uns<svg viewBox="0 0 24 24">
-						<use xlink:href="./symbol/icons.svg#socialmedia-instagram"></use>
-					</svg></a>
+							<use xlink:href="./symbol/icons.svg#socialmedia-instagram"></use>
+						</svg></a>
 				</div>
 			</div>
 		</div>
