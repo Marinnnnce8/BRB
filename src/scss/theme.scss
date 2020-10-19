@@ -58,3 +58,19 @@
 .uk-container {
 	max-width: 1280px;
 }
+
+@media (max-width: $breakpointSmallMax - 1) {
+	.uk-grid {
+		margin-left: -18px;
+
+		>* {
+			padding-left: 18px;
+		}
+	}
+
+	*+.uk-grid-margin,
+	.uk-grid+.uk-grid,
+	.uk-grid>.uk-grid-margin {
+		margin-top: 40px;
+	}
+}
