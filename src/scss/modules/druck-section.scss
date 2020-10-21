@@ -120,12 +120,12 @@
     padding: 60px 0 47px;
 
     h2 {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
         line-height: 60px;
     }
 
     p {
-        margin-top: 15px;
+        margin-top: 20px;
         font-size: 16px;
         font-weight: $light;
     }
@@ -135,6 +135,8 @@
     }
 
     .uk-card-media-top {
+        min-height: 364px;
+
         &::after {
             position: absolute;
             bottom: 0;
@@ -152,17 +154,103 @@
 
     @media (min-width: $breakpointMobile) {
         padding: 35px 0 60px;
+
+        h2 {
+            margin-bottom: 47px;
+        }
     }
 
     @media (min-width: $breakpointTabletPortrait) {
         padding: 25px 0 70px;
+
+        h2 {
+            margin-bottom: 37px;
+        }
+
+        .uk-card-media-top {
+            min-height: 300px;
+        }
     }
 
     @media (min-width: $breakpointMedium) {
         padding: 25px 0 125px;
+
+        .uk-card-media-top {
+            min-height: 416px;
+        }
     }
 
     @media (min-width: $breakpointLarge) {
         padding: 48px 0 125px;
+
+        p {
+            margin-top: 15px;
+        }
+    }
+
+    @media (min-width: $breakpointTabletPortrait) and (max-width: $breakpointSmallMax) {
+        .uk-card-title {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    @media (min-width: $breakpointSmall) and (max-width: $breakpointTabletPortrait) {
+
+        .uk-card {
+            display: flex;
+        }
+
+        .uk-card-media-top {
+            max-width: 256px;
+            margin-right: 15px;
+            width: 100%;
+            min-height: 0;
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 30px;
+        }
+
+        .uk-card-body {
+            padding-top: 0;
+            width: calc(100% - 256px);
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortrait) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        // sass-lint:disable class-name-format
+        .uk-child-width-1-3>* {
+            width: 100%;
+        }
+
+        // sass-lint:enable class-name-format
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 40px;
+        }
+
+        .uk-card-body {
+            padding-top: 15px;
+        }
+
+        .uk-card-title {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: $breakpointMobile) {
+        h2 {
+            font-size: 32px;
+        }
     }
 }
