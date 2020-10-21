@@ -94,12 +94,16 @@
         // sass-lint:enable class-name-format
 
         .uk-card {
-            padding: 30px 45px 42px;
+            padding: 30px 15px 42px;
         }
     }
 
     @media (min-width: $breakpointMedium) {
         padding: 93px 0;
+
+        .uk-card {
+            padding: 30px 45px 42px;
+        }
     }
 
     @media (max-width: $breakpointTabletPortrait) {

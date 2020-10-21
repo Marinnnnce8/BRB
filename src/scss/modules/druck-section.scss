@@ -1,5 +1,21 @@
 .druck-top {
-    padding: 90px 0 100px;
+    padding: 75px 0 89px;
+
+    @media (min-width: $breakpointMobile) {
+        text-align: center;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding: 75px 0 82px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 95px 0;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding: 90px 0 100px;
+    }
 }
 
 .druck-title,
@@ -9,8 +25,12 @@
 }
 
 .druck-title h2 {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     color: $white;
+
+    @media (min-width: $breakpointMobile) {
+        margin-bottom: 45px;
+    }
 }
 
 .druck-text {
