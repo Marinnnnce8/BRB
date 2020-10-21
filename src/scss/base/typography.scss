@@ -71,6 +71,12 @@ ul {
 		font-size: 16px;
 		line-height: 20px;
 	}
+
+	@media (max-width: $breakpointSmallMax) and (min-width: $breakpointTabletPortrait) {
+		li {
+			font-size: 16px;
+		}
+	}
 }
 
 blockquote {
