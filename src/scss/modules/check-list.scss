@@ -67,16 +67,6 @@
         }
     }
 
-    @media (min-width: $breakpointSmallMax) {
-
-        // sass-lint:disable class-name-format
-        .uk-child-width-1-4>* {
-            width: 25%;
-        }
-
-        // sass-lint:enable class-name-format
-    }
-
     @media (max-width: $breakpointSmallMax) {
         .uk-grid {
             justify-content: space-between;
@@ -95,6 +85,16 @@
         .uk-grid>.uk-grid-margin {
             margin-top: 30px;
         }
+    }
+
+    @media (min-width: $breakpointSmallMax) {
+
+        // sass-lint:disable class-name-format
+        .uk-child-width-1-4>* {
+            width: 25%;
+        }
+
+        // sass-lint:enable class-name-format
     }
 
     @media (max-width: $breakpointTabletPortraitMin) {

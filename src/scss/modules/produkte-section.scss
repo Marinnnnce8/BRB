@@ -1,9 +1,16 @@
 .produkte-section {
     border-top: 37px solid $yellow;
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
 }
 
 .produkte-intro {
-    padding: 230px 0 25px;
+    padding: 167px 0 0;
 
     .uk-svg,
     .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
@@ -11,21 +18,74 @@
         height: 500px;
         color: $gray-light;
         fill: $gray-light;
-        top: -60px;
+        top: -120px;
     }
 
     h2 {
         line-height: 60px;
         color: $black;
     }
+
+    @media (min-width: $breakpointMobile) {
+        padding: 230px 0 0;
+
+        .uk-svg,
+        .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
+            top: -60px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding: 230px 0 25px;
+    }
 }
 
 .produkte-intro-text {
     max-width: 1064px;
+    padding-top: 15px;
+
+    p:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding-top: 0;
+
+        p:last-of-type {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .produkte-progress {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
+
+    @media (min-width: $breakpointMobile) {
+        padding-bottom: 85px;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding-bottom: 106px;
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding-bottom: 147px;
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: $breakpointTabletPortraitMin) {
+        .project-progress {
+            padding-top: 35px;
+        }
+    }
 }
 
 .produkte-bottom {
