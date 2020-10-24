@@ -1,7 +1,25 @@
 .about-section {
     >.uk-background-cover {
         display: block;
-        min-height: 600px;
+        min-height: 209px;
+    }
+
+    @media (min-width: $breakpointTabletPortraitMax) {
+        >.uk-background-cover {
+            min-height: 312px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        >.uk-background-cover {
+            min-height: 458px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        >.uk-background-cover {
+            min-height: 600px;
+        }
     }
 }
 
@@ -115,6 +133,10 @@
 }
 
 .about-wrap {
+    @media (min-width: $breakpointTabletPortrait) {
+        margin-bottom: 10px;
+    }
+
     @media (max-width: $breakpointTabletPortrait) {
         flex-direction: column;
 
