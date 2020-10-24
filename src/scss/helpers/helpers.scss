@@ -63,6 +63,16 @@ abbr[title] {
 	}
 }
 
+.uk-divider-small {
+	&::after {
+		border-color: $white;
+	}
+
+	&.blue::after {
+		border-color: $blue;
+	}
+}
+
 // Theming and colors iterator
 @each $colors-name in $site-colors {
 	$name: nth($colors-name, 1);

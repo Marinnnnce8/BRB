@@ -3,16 +3,67 @@
 .banner {
 	// min-height: calc(100vh - 126px);
 	// max-height: calc(100vh - 126px);
-	padding-bottom: 44%;
 	overflow: hidden;
 
 	>svg {
-		width: 330px;
-		height: 330px;
+		color: $white;
 		fill: $white;
-		position: absolute;
-		left: 66px;
-   	 	bottom: 355px;
+	}
+
+	&:not(.internal) {
+		padding-bottom: 44%;
+
+		>svg {
+			width: 330px;
+			height: 330px;
+			fill: $white;
+			position: absolute;
+			left: 66px;
+			bottom: 355px;
+		}
+	}
+
+	&.internal {
+
+		.banner-inner {
+			padding: 0;
+			min-height: 338px;
+		}
+
+		h1 {
+			background-color: transparent;
+			font-size: 50px;
+			line-height: 60px;
+			margin-top: 5px;
+			font-weight: $bold;
+		}
+
+		>svg {
+			width: 272px;
+			height: 272px;
+			opacity: .7;
+			top: 60%;
+			left: 50.2%;
+		}
+	}
+
+	@media (min-width: $breakpointMobile) {
+		&.internal {
+			padding: 0 25px;
+
+			h1 {
+				font-size: 90px;
+				font-weight: $light;
+				margin-top: 0;
+			}
+
+			>svg {
+				width: 448px;
+				height: 448px;
+				top: 63%;
+				left: 54.2%;
+			}
+		}
 	}
 }
 
