@@ -89,7 +89,11 @@
 }
 
 .produkte-bottom {
-    padding-bottom: 170px;
+    padding-bottom: 80px;
+
+    .uk-card-media-top {
+        min-height: 270px;
+    }
 
     .uk-card-body {
         padding-top: 15px;
@@ -99,13 +103,155 @@
         color: $black;
     }
 
+    h4 {
+        line-height: 25px;
+    }
+
+    p {
+        color: $black;
+    }
+
     .uk-text-light b {
         font-weight: $bold;
+    }
+
+    .text .info {
+        display: none;
     }
 
     svg {
         width: 95px;
         height: 95px;
-        margin-right: 25px;
+        margin-right: 13px;
+    }
+
+    @media (min-width: $breakpointMobile) {
+        padding-bottom: 67px;
+    }
+
+    @media (min-width: $breakpointTabletPortrait) {
+        padding-bottom: 105px;
+
+        .uk-card-body {
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
+
+        .uk-card-media-top {
+            min-height: 356px;
+        }
+
+        svg {
+            width: 85px;
+            height: 85px;
+            margin-right: 20px;
+        }
+    }
+
+    @media (min-width: $breakpointMedium) {
+        padding-bottom: 120px;
+
+        .uk-card-media-top {
+            min-height: 491px;
+        }
+
+        svg {
+            margin-right: 15px;
+        }
+    }
+
+    @media (min-width: $breakpointLarge) {
+        padding-bottom: 167px;
+
+        svg {
+            margin-right: 25px;
+        }
+    }
+
+    @media (max-width: $breakpointLarge) {
+        .text {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $breakpointLarge) and (min-width: $breakpointMedium) {
+        .text {
+
+            h4 {
+                max-width: 39%;
+            }
+
+            p {
+                max-width: 70%;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointMedium) {
+        .uk-container {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+    }
+
+    @media (max-width: $breakpointMedium) and (min-width: $breakpointTabletPortrait) {
+
+        h3 {
+            font-size: 19px;
+            line-height: 24px;
+        }
+
+        .text {
+
+            h4 {
+                max-width: 59%;
+            }
+
+            p {
+                max-width: 66%;
+            }
+        }
+    }
+
+    @media (max-width: $breakpointLarge) and (min-width: $breakpointTabletPortrait) {
+        .text .info {
+            display: block;
+        }
+    }
+
+    @media (max-width: $breakpointTabletPortraitMax) {
+        .uk-container {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        *+.uk-grid-margin,
+        .uk-grid+.uk-grid,
+        .uk-grid>.uk-grid-margin {
+            margin-top: 20px;
+        }
+
+        .uk-child-width-1-2>* {
+            width: 100%;
+        }
+
+        .uk-card {
+            display: flex;
+        }
+
+        .uk-card-media-top,
+        .uk-card-body {
+            width: 50%;
+        }
+
+        .uk-card-body {
+            padding-left: 15px;
+            padding-top: 0;
+        }
+
+        .text {
+            padding-right: 17px;
+        }
     }
 }
