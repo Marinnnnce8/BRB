@@ -14,13 +14,23 @@
 		padding-bottom: 44%;
 
 		>svg {
-			width: 330px;
-			height: 330px;
+			width: 305px;
+			height: 305px;
 			fill: $white;
 			position: absolute;
-			left: 66px;
-			bottom: 355px;
+			left: -70px;
+			bottom: 18px;
 			z-index: 14;
+		}
+
+		.banner-inner {
+			padding: 0 0 65px 65px;
+		}
+
+		h1 {
+			&:last-of-type {
+				display: none;
+			}
 		}
 	}
 
@@ -49,6 +59,7 @@
 	}
 
 	@media (min-width: $breakpointTabletPortraitMax) {
+
 		&.internal {
 			padding: 0 25px;
 
@@ -66,9 +77,71 @@
 			}
 		}
 	}
+
+	@media (min-width: $breakpointTabletPortrait) {
+		&:not(.internal) {
+
+			>svg {
+				width: 305px;
+				height: 305px;
+				left: 66px;
+				bottom: 183px;
+			}
+
+			.banner-inner {
+				padding: 0 0 110px 190px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpointMedium) {
+		&:not(.internal) {
+
+			>svg {
+				width: 395px;
+				height: 395px;
+				left: 15px;
+				bottom: 206px;
+			}
+
+			.banner-inner {
+				padding: 0 0 113px 219px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpointLarge) {
+		&:not(.internal) {
+
+			>svg {
+				width: 440px;
+				height: 440px;
+				left: 42px;
+				bottom: 300px;
+			}
+
+			.banner-inner {
+				padding: 0 0 210px 260px;
+			}
+		}
+	}
+
+	@media (max-width: $breakpointTabletPortrait) {
+		&:not(.internal) {
+			h1 {
+				&:first-of-type {
+					display: none;
+				}
+
+				&:last-of-type {
+					display: inline;
+				}
+			}
+		}
+	}
 }
 
 .banner-inner {
-	padding: 0 0 210px 240px;
+	// padding: 0 0 210px 240px;
 	z-index: 14;
 }

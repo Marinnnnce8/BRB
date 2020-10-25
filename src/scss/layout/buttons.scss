@@ -63,8 +63,11 @@ input[type='submit'] {
 			background-color: transparent;
 		}
 
-		svg {
-			left: 5px;
+		&:not(.button-scroll) {
+
+			svg {
+				transform: translateX(5px);
+			}
 		}
 	}
 }

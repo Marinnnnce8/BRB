@@ -2,6 +2,10 @@
     background-color: $blue-pastel;
     padding: 70px 0 65px;
 
+    h2 {
+        @include visually-hidden;
+    }
+
     // sass-lint:disable class-name-format
     .uk-child-width-1-3\@s>* {
         width: 100%;

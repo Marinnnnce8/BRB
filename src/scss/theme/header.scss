@@ -18,7 +18,7 @@
             padding: 0;
         }
 
-        &:not(:first-of-type)>a {
+        >a {
             padding: 0;
             font-family: $font-default;
             font-size: 22px;
@@ -72,9 +72,11 @@
             }
 
             @include hover {
-                svg {
-                    color: $blue;
-                    fill: $blue;
+
+                &:before,
+                &:after {
+                    opacity: 1;
+                    transform: translateY(5px);
                 }
             }
         }
