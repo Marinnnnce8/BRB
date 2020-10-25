@@ -64,6 +64,9 @@ abbr[title] {
 }
 
 .uk-divider-small {
+	width: 104px;
+	margin: 25px 0 20px;
+
 	&::after {
 		border-color: $white;
 	}

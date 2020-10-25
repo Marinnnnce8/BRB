@@ -79,6 +79,31 @@ ul {
 	}
 }
 
+.uk-list-disc {
+	li {
+		position: relative;
+		padding-left: 10px;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 9px;
+			list-style-type: none;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: $black;
+			margin: 0;
+		}
+	}
+
+	@media (min-width: $breakpointMobile) {
+		li::before {
+			top: 15px;
+		}
+	}
+}
+
 blockquote {
 	font-style: normal;
 }
