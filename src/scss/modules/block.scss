@@ -10,10 +10,15 @@
         padding-bottom: 0;
     }
 
+    &.impressum-contact {
+        padding: 103px 0 40px;
+    }
+
     &.daten {
         padding-top: 100px;
 
         ul,
+        a,
         p {
             margin-bottom: 25px;
         }
@@ -23,6 +28,10 @@
             &.uk-text-bold {
                 font-size: 18px;
                 line-height: 25px;
+                margin-bottom: 0;
+            }
+
+            a {
                 margin-bottom: 0;
             }
         }
@@ -43,6 +52,7 @@
     }
 
     p,
+    a,
     li {
         font-size: 18px;
         line-height: 25px;
@@ -59,8 +69,19 @@
         }
     }
 
+    p,
+    li {
+        a {
+            margin-bottom: 0;
+        }
+    }
+
     @media (min-width: $breakpointMobile) {
         padding: 100px 0;
+
+        &.impressum-contact {
+            padding: 100px 0;
+        }
 
         &.info {
             padding-bottom: 85px;
@@ -74,6 +95,7 @@
             padding: 100px 0 200px;
 
             ul,
+            a,
             p {
                 margin-bottom: 40px;
             }
@@ -85,6 +107,10 @@
                     line-height: 35px;
                     margin-bottom: 0;
                 }
+
+                a {
+                    margin-bottom: 0;
+                }
             }
         }
 
@@ -94,6 +120,7 @@
         }
 
         p,
+        a,
         li {
             font-size: 20px;
             line-height: 35px;
@@ -102,19 +129,18 @@
                 line-height: 35px;
             }
         }
+
+        p,
+        li {
+            a {
+                margin-bottom: 0;
+            }
+        }
     }
 
     @media (min-width: $breakpointLarge) {
         .uk-container-small {
             padding-left: 230px;
         }
-    }
-}
-
-.impressum-contact {
-    padding: 103px 0 40px;
-
-    @media (min-width: $breakpointMobile) {
-        padding: 100px 0;
     }
 }

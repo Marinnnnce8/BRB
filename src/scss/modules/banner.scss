@@ -20,6 +20,7 @@
 			position: absolute;
 			left: 66px;
 			bottom: 355px;
+			z-index: 14;
 		}
 	}
 
@@ -47,7 +48,7 @@
 		}
 	}
 
-	@media (min-width: $breakpointMobile) {
+	@media (min-width: $breakpointTabletPortraitMax) {
 		&.internal {
 			padding: 0 25px;
 
@@ -69,4 +70,5 @@
 
 .banner-inner {
 	padding: 0 0 210px 240px;
+	z-index: 14;
 }

@@ -6,7 +6,7 @@
         width: 124px;
 
         img {
-            width: 100%;
+            width: 124px;
         }
     }
 
@@ -63,6 +63,10 @@
     @media (min-width: $breakpointMedium) {
         .uk-card {
             width: 150px;
+
+            img {
+                width: 150px;
+            }
         }
 
         .arrow {

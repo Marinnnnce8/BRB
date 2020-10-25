@@ -71,6 +71,10 @@
         max-width: 415px;
     }
 
+    .uk-button {
+        z-index: 1;
+    }
+
     @media (min-width: $breakpointMobile) {
         padding: 144px 0 25px;
 

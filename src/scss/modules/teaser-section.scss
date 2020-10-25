@@ -12,7 +12,6 @@
     .uk-card {
         background-color: $white;
         border-radius: 5px;
-        transition: $timing $speed;
         padding: 30px 33px 42px;
         min-height: 265px;
         height: 100%;
@@ -20,7 +19,7 @@
         &::before,
         .uk-svg,
         .uk-svg:not(.uk-preserve) [fill*='#']:not(.uk-preserve) {
-            transition: inherit;
+            transition: $timing $speed;
         }
 
         &::before {
@@ -31,6 +30,7 @@
             width: 100%;
             left: 0;
             bottom: 0;
+            transition: $timing $speed;
         }
 
         .uk-svg,
@@ -83,7 +83,7 @@
         padding: 40px 0 52px;
     }
 
-    @media (min-width: $breakpointTabletPortrait) {
+    @media (min-width: $breakpointTabletPortraitMax) {
         padding: 88px 0 83px;
 
         // sass-lint:disable class-name-format

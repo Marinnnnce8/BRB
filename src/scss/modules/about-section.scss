@@ -137,7 +137,7 @@
         margin-bottom: 10px;
     }
 
-    @media (max-width: $breakpointTabletPortrait) {
+    @media (max-width: $breakpointTabletPortraitMax) {
         flex-direction: column;
 
         .uk-width-1-2 {
