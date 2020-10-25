@@ -13,7 +13,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-	<link rel="manifest" href="./favicon/site.webmanifest">
+	<!-- <link rel="manifest" href="./favicon/site.webmanifest"> -->
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="apple-mobile-web-app-title" content="BMB">
@@ -119,10 +119,10 @@
 		<section class="intro-section">
 			<div class="uk-container">
 				<div class="uk-flex uk-flex-column uk-flex-middle">
-					<div class="intro-title">
+					<div class="intro-title" data-uk-scrollspy="cls: uk-animation-slide-left; delay: 500">
 						<h2>Von der Idee bis zum fertigen Produkt – von der Grafik bis zur Lieferung</h2>
 					</div>
-					<div class="intro-text">
+					<div class="intro-text" data-uk-scrollspy="cls: uk-animation-slide-right; delay: 500">
 						<p class="uk-text-light">Servicequalität steht bei uns an erster Stelle. Umfassende Beratung,
 							Schnelligkeit, Flexibilität
 							und
@@ -141,7 +141,8 @@
 		<section class="teaser-section bg-blue">
 			<h2>Teaser section</h2>
 			<div class="uk-container">
-				<div data-uk-grid class="uk-child-width-1-3@s" data-uk-height-match=".uk-card">
+				<div data-uk-grid class="uk-child-width-1-3@s" data-uk-height-match=".uk-card"
+					data-uk-scrollspy="target: .uk-card;cls: uk-animation-fade; delay: 350">
 					<div>
 						<div
 							class="uk-card uk-flex uk-flex-column uk-flex-around border-bottom-blue uk-overflow-hidden uk-text-center">
@@ -176,13 +177,14 @@
 		<section class="druck-section" id="druck">
 			<div class="druck-top bg-blue">
 				<div class="uk-container">
-					<div class="druck-title uk-margin-auto">
+					<div class="druck-title uk-margin-auto" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 500">
 						<h2>Schnell, individuell & zuverlässig: Wir liefern Ihnen exzellente Qualität und finden auch
 							für
 							Ihren
 							Wunsch die perfekte Lösung.</h2>
 					</div>
-					<div class="druck-text uk-margin-auto">
+					<div class="druck-text uk-margin-auto"
+						data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500">
 						<p>Wir sind ein Qualitätsbetrieb zur Herstellung hochwertiger Werbedrucksachen. Ob 1-farbig,
 							4-farbig,
 							5-farbig, X-farbig, Sonderfarben, Drucklack, Spotlack oder Reliefglanzlack. Von
@@ -203,16 +205,17 @@
 				</div>
 			</div>
 			<div class="druck-middle uk-position-relative check-list">
-				<svg viewBox="0 0 190 275">
+				<svg viewBox="0 0 190 275" data-uk-scrollspy="cls: uk-animation-fade; delay: 350">
 					<use xlink:href="./symbol/icons.svg#keyvisual-marks"></use>
 				</svg>
-				<div class="uk-container">
+				<div class="uk-container" data-uk-scrollspy="cls: uk-animation-fade; delay: 500">
 					<div class="uk-flex uk-flex-center uk-text-center uk-position-relative uk-position-z-index">
 						<h2>Unsere Druckleistungen im Überblick</h2>
 					</div>
 				</div>
 				<div class="uk-container">
-					<div class="uk-child-width-1-4 uk-grid-small uk-position-relative uk-position-z-index" data-uk-grid>
+					<div class="uk-child-width-1-4 uk-grid-small uk-position-relative uk-position-z-index" data-uk-grid
+						data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 350">
 						<div>
 							<h3 class="color-blue">Offset</h3>
 							<ul class="uk-list">
@@ -471,7 +474,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="uk-container">
+				<div class="uk-container" data-uk-scrollspy="cls: uk-animation-slide-left; delay: 350">
 					<div class="uk-flex uk-flex-center">
 						<a href="#kontakt" class="uk-button uk-button-primary" data-uk-scroll>
 							<svg viewBox="0 0 24 24">
@@ -483,10 +486,11 @@
 			</div>
 			<div class="druck-bottom">
 				<div class="uk-container">
-					<div class="uk-text-center">
+					<div class="uk-text-center" data-uk-scrollspy="uk-animation-fade; delay: 350">
 						<h2>Klassische Druckveredelungen</h2>
 					</div>
-					<div class="uk-child-width-1-3 uk-grid-small" data-uk-grid data-uk-height-match=".uk-card">
+					<div class="uk-child-width-1-3 uk-grid-small" data-uk-grid data-uk-height-match=".uk-card"
+						data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 350">
 						<div>
 							<div class="uk-card">
 								<div class="uk-card-media-top uk-position-relative uk-background-cover" data-uk-img
@@ -549,16 +553,22 @@
 				</svg>
 				<div class="uk-container">
 					<div class="uk-position-relative uk-position-z-index">
-						<h2 class="uk-margin-remove-bottom">Lettershop</h2>
+						<h2 class="uk-margin-remove-bottom" data-uk-scrollspy="cls: uk-animation-fade; delay: 300">
+							Lettershop</h2>
 						<div class="uk-flex intro-inline uk-flex-column uk-margin-medium-bottom">
 							<div>
-								<span class="bg-pink uk-text-uppercase uk-text-bold">PROFESSIONELLER DRUCK</span>
+								<span class="bg-pink uk-text-uppercase uk-text-bold"
+									data-uk-scrollspy="cls: uk-animation-slide-left; delay: 350">PROFESSIONELLER
+									DRUCK</span>
 							</div>
 							<div>
-								<span class="bg-pink uk-text-uppercase uk-text-bold">UND OPTIMIERTER VERSAND</span>
+								<span class="bg-pink uk-text-uppercase uk-text-bold"
+									data-uk-scrollspy="cls: uk-animation-slide-right; delay: 400">UND OPTIMIERTER
+									VERSAND</span>
 							</div>
 						</div>
-						<div class="lettershop-intro-text uk-margin-auto">
+						<div class="lettershop-intro-text uk-margin-auto"
+							data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 450">
 							<p class="uk-text-light uk-margin-medium-bottom">Wir übernehmen nicht nur den Druck in
 								bester
 								Qualität – wir organisieren auch einen
@@ -581,7 +591,7 @@
 			<div class="lettershop-progress">
 				<div class="uk-container">
 					<div class="project-progress uk-margin-auto">
-						<div class="progress-inner uk-flex uk-flex-between">
+						<div class="progress-inner uk-flex uk-flex-between" data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 120">
 							<div class="progress-box uk-flex uk-flex-left">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
@@ -676,9 +686,9 @@
 			<div class="lettershop-bottom check-list">
 				<div class="uk-container">
 					<div class="uk-text-center">
-						<h2 class="uk-margin-medium-bottom">Unsere Lettershop-Leistungen im Detail</h2>
+						<h2 class="uk-margin-medium-bottom" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 350">Unsere Lettershop-Leistungen im Detail</h2>
 					</div>
-					<div class="uk-child-width-1-4 uk-grid-small" data-uk-grid>
+					<div class="uk-child-width-1-4 uk-grid-small" data-uk-grid data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 350">
 						<div>
 							<h3 class="color-pink">Unser Service</h3>
 							<ul class="uk-list">
@@ -914,22 +924,22 @@
 				<div class="uk-container">
 					<div class="uk-position-relative uk-position-z-index">
 						<div class="uk-flex intro-inline inverse uk-flex-column">
-							<div>
+							<div data-uk-scrollspy="cls: uk-animation-slide-right; delay: 350">
 								<span class="bg-yellow uk-text-uppercase uk-text-bold">AUSGEZEICHNET</span>
 							</div>
-							<div>
+							<div data-uk-scrollspy="cls: uk-animation-slide-left; delay: 400">
 								<span class="bg-yellow uk-text-uppercase uk-text-bold uk-margin-remove-bottom">UND
 									PREISGEKRÖNT</span>
 							</div>
 						</div>
-						<h2 class="uk-margin-remove-bottom uk-margin-small-top">Innovative Produkte</h2>
+						<h2 class="uk-margin-remove-bottom uk-margin-small-top" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 450">Innovative Produkte</h2>
 					</div>
 				</div>
 			</div>
 			<div class="produkte-progress">
 				<div class="uk-container">
 					<div class="project-progress uk-margin-auto">
-						<div class="progress-inner uk-flex uk-flex-between">
+						<div class="progress-inner uk-flex uk-flex-between" data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 120">
 							<div class="progress-box uk-flex uk-flex-left">
 								<div class="uk-card uk-flex uk-flex-column uk-flex-middle">
 									<div class="uk-card-media-top uk-position-relative">
@@ -1019,9 +1029,9 @@
 						</div>
 					</div>
 					<div class="produkte-intro-text uk-margin-auto">
-						<p class="uk-text-bold uk-margin-remove">Wir liefern alles – von der Idee bis zum fertigen
+						<p class="uk-text-bold uk-margin-remove" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 120">Wir liefern alles – von der Idee bis zum fertigen
 							Produkt</p>
-						<p class="uk-text-light uk-margin-remove-top">Sie wissen, was Sie
+						<p class="uk-text-light uk-margin-remove-top" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 240">Sie wissen, was Sie
 							brauchen, aber noch nicht,
 							wie es aussehen soll? Wir entwickeln auch das Produktdesign für Sie. Dabei übernehmen wir
 							Planung und Gestaltung bis hin zum fertigen Produkt in enger Abstimmung mit Ihnen. Denn für
@@ -1030,7 +1040,7 @@
 							unterstützen auch effektiv die Markenkommunikation und fördern die Image-Bildung Ihres
 							Unternehmens. Mit BMB als Partner entsteht eine Produktpräsentation, die erfolgreich auf
 							Ihre Marke einzahlt.</p>
-						<div class="uk-flex uk-flex-center">
+						<div class="uk-flex uk-flex-center" data-uk-scrollspy="cls: uk-animation-slide-top; delay: 360">
 							<a href="#kontakt" class="uk-button uk-button-default yellow" data-uk-scroll>
 								<svg viewBox="0 0 24 24">
 									<use xlink:href="./symbol/icons.svg#arrow-black"></use>
@@ -1042,7 +1052,7 @@
 			</div>
 			<div class="produkte-bottom">
 				<div class="uk-container">
-					<div data-uk-grid class="uk-grid-small uk-child-width-1-2">
+					<div data-uk-grid class="uk-grid-small uk-child-width-1-2" data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 300">
 						<div>
 							<div class="uk-card">
 								<div class="uk-card-media-top uk-background-cover" data-uk-img
@@ -1088,7 +1098,7 @@
 
 		<section class="about-section" id="uber-uns">
 			<div class="about-wrap uk-flex">
-				<div class="uk-width-1-2">
+				<div class="uk-width-1-2" data-uk-scrollspy="cls: uk-animation-slide-left; delay: 350">
 					<div class="uk-height-1-1 about-banner">
 						<span style="background-image: url('./img/aboutus_big.jpg');" data-uk-img
 							class="uk-background-cover uk-width-1-1 uk-height-1-1" role="presentation"></span>
@@ -1099,7 +1109,7 @@
 				<div class="uk-width-1-2">
 					<div class="uk-flex about-content uk-position-relative">
 						<div class="about-text">
-							<blockquote class="uk-position-relative">
+							<blockquote class="uk-position-relative" data-uk-scrollspy="cls: uk-animation-fade; delay: 500">
 								<span class="uk-position-top-center" role="presentation">
 									<svg viewBox="0 0 24 24">
 										<use xlink:href="./symbol/icons.svg#aboutus-quote"></use>
@@ -1108,7 +1118,7 @@
 								<h2 class="uk-position-relative uk-position-z-index">Motivation, Vertrauen und
 									Zufriedenheit sind die Basis unseres Erfolges</h2>
 							</blockquote>
-							<p class="uk-text-light color-black">Wir setzen auf partnerschaftliche und langfristige
+							<p class="uk-text-light color-black" data-uk-scrollspy="cls: uk-animation-fade; delay: 600">Wir setzen auf partnerschaftliche und langfristige
 								Zusammenarbeit.
 								Dabei sind wir stets
 								mit
@@ -1123,250 +1133,345 @@
 				</div>
 			</div>
 			<span class="uk-background-cover uk-width-1-1 about-box" data-uk-img
-				style="background-image: url('./img/bnd_aussen.jpg');" role="presentation"></span>
+				style="background-image: url('./img/bnd_aussen.jpg');" role="presentation" data-uk-scrollspy="cls: uk-animation-fade; delay: 350"></span>
 		</section>
 
 		<section class="reference-section bg-gray-alt uk-text-center">
 			<div class="uk-container">
-				<div>
+				<div data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 350">
 					<h2>Unsere Referenzen</h2>
 				</div>
 			</div>
 			<div class="uk-container">
-				<div class="uk-child-width-1-4 uk-grid-small" data-uk-grid data-uk-height-match=".uk-card">
+				<div class="uk-child-width-1-4 uk-grid-small" data-uk-grid data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 120">
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu BMW"></a>
-							<img src="./img/references_bmw.jpg" loading="lazy" alt="BMW logo">
+							<div>
+								<img src="./img/references_bmw.jpg" loading="lazy" width="309" height="174"
+									alt="BMW logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu brand.new day "></a>
-							<img src="./img/references_bnd.jpg" loading="lazy" alt="brand.new day logo">
+							<div>
+								<img src="./img/references_bnd.jpg" loading="lazy" width="309" height="174"
+									alt="brand.new day logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu citroën"></a>
-							<img src="./img/references_citroen.jpg" loading="lazy" alt="citroën logo">
+							<div>
+								<img src="./img/references_citroen.jpg" loading="lazy" width="309" height="174"
+									alt="citroën logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu clasen"></a>
-							<img src="./img/references_clasen.jpg" loading="lazy" alt="clasen logo">
+							<div>
+								<img src="./img/references_clasen.jpg" loading="lazy" width="309" height="174"
+									alt="clasen logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu clasquin"></a>
-							<img src="./img/references_clasquin.jpg" loading="lazy" alt="clasquin logo">
+							<div>
+								<img src="./img/references_clasquin.jpg" loading="lazy" width="309" height="174"
+									alt="clasquin logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu daab"></a>
-							<img src="./img/references_daab.jpg" loading="lazy" alt="daab logo">
+							<div>
+								<img src="./img/references_daab.jpg" loading="lazy" width="309" height="174"
+									alt="daab logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu dänisches bettenlager"></a>
-							<img src="./img/references_dbl.jpg" loading="lazy" alt="dänisches bettenlager logo">
+							<div>
+								<img src="./img/references_dbl.jpg" loading="lazy" width="309" height="174"
+									alt="dänisches bettenlager logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu designer outlet"></a>
-							<img src="./img/references_designer_outlet.jpg" loading="lazy" alt="designer outlet logo">
+							<div>
+								<img src="./img/references_designer_outlet.jpg" loading="lazy" width="309" height="174"
+									alt="designer outlet logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu deutsche post"></a>
-							<img src="./img/references_dpag.jpg" loading="lazy" alt="deutsche post logo">
+							<div>
+								<img src="./img/references_dpag.jpg" loading="lazy" width="309" height="174"
+									alt="deutsche post logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu dpd"></a>
-							<img src="./img/references_dpd.jpg" loading="lazy" alt="dpd logo">
+							<div>
+								<img src="./img/references_dpd.jpg" loading="lazy" width="309" height="174"
+									alt="dpd logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu druckpartner"></a>
-							<img src="./img/references_druckpartner.jpg" loading="lazy" alt="druckpartner logo">
+							<div>
+								<img src="./img/references_druckpartner.jpg" loading="lazy" width="309" height="174"
+									alt="druckpartner logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu dialog-team fienhold"></a>
-							<img src="./img/references_dtf.jpg" loading="lazy" alt="dialog-team fienhold logo">
+							<div>
+								<img src="./img/references_dtf.jpg" loading="lazy" width="309" height="174"
+									alt="dialog-team fienhold logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu fan factory"></a>
-							<img src="./img/references_ff.jpg" loading="lazy" alt="fan factory logo">
+							<div>
+								<img src="./img/references_ff.jpg" loading="lazy" width="309" height="174"
+									alt="fan factory logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu forsa"></a>
-							<img src="./img/references_forsa.jpg" loading="lazy" alt="forsa logo">
+							<div>
+								<img src="./img/references_forsa.jpg" loading="lazy" width="309" height="174"
+									alt="forsa logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu grow"></a>
-							<img src="./img/references_grow.jpg" loading="lazy" alt="grow logo">
+							<div>
+								<img src="./img/references_grow.jpg" loading="lazy" width="309" height="174"
+									alt="grow logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu here maps for life"></a>
-							<img src="./img/references_here.jpg" loading="lazy" alt="here maps for life logo">
+							<div>
+								<img src="./img/references_here.jpg" loading="lazy" width="309" height="174"
+									alt="here maps for life logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu kia"></a>
-							<img src="./img/references_kia.jpg" loading="lazy" alt="kia logo">
+							<div>
+								<img src="./img/references_kia.jpg" loading="lazy" width="309" height="174"
+									alt="kia logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu mercedes benz"></a>
-							<img src="./img/references_mercedes_benz.jpg" loading="lazy" alt="mercedes benz logo">
+							<div>
+								<img src="./img/references_mercedes_benz.jpg" loading="lazy" width="309" height="174"
+									alt="mercedes benz logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu mini"></a>
-							<img src="./img/references_mini.jpg" loading="lazy" alt="mini logo">
+							<div>
+								<img src="./img/references_mini.jpg" loading="lazy" width="309" height="174"
+									alt="mini logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu navteq maps"></a>
-							<img src="./img/references_navteq.jpg" loading="lazy" alt="navteq maps logo">
+							<div>
+								<img src="./img/references_navteq.jpg" loading="lazy" width="309" height="174"
+									alt="navteq maps logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu der ministerpräsident des landes nordhein-westfalen"></a>
-							<img src="./img/references_nissan.jpg" loading="lazy" alt="nissan logo">
+							<div>
+								<img src="./img/references_nissan.jpg" loading="lazy" width="309" height="174"
+									alt="nissan logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu..."></a>
-							<img src="./img/references_nrw.jpg" loading="lazy"
-								alt="der ministerpräsident des landes nordhein-westfalen logo">
+							<div>
+								<img src="./img/references_nrw.jpg" loading="lazy" width="309" height="174"
+									alt="der ministerpräsident des landes nordhein-westfalen logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu peugeot"></a>
-							<img src="./img/references_peugeot.jpg" loading="lazy" alt="peugeot logo">
+							<div>
+								<img src="./img/references_peugeot.jpg" loading="lazy" width="309" height="174"
+									alt="peugeot logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu pure marketing & söhne"></a>
-							<img src="./img/references_pure.jpg" loading="lazy" alt="pure marketing & söhne logo">
+							<div>
+								<img src="./img/references_pure.jpg" loading="lazy" width="309" height="174"
+									alt="pure marketing & söhne logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu ratioline"></a>
-							<img src="./img/references_ratioline.jpg" loading="lazy" alt="ratioline logo">
+							<div>
+								<img src="./img/references_ratioline.jpg" loading="lazy" width="309" height="174"
+									alt="ratioline logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu rheinbahn"></a>
-							<img src="./img/references_rheinbahn.jpg" loading="lazy" alt="rheinbahn logo">
+							<div>
+								<img src="./img/references_rheinbahn.jpg" loading="lazy" width="309" height="174"
+									alt="rheinbahn logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu sopexa deutschland"></a>
-							<img src="./img/references_sopexa.jpg" loading="lazy" alt="sopexa deutschland logo">
+							<div>
+								<img src="./img/references_sopexa.jpg" loading="lazy" width="309" height="174"
+									alt="sopexa deutschland logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu stadtwerke düsseldorf"></a>
-							<img src="./img/references_stadtwerke_dssd.jpg" loading="lazy"
-								alt="stadtwerke düsseldorf logo">
+							<div>
+								<img src="./img/references_stadtwerke_dssd.jpg" loading="lazy" width="309" height="174"
+									alt="stadtwerke düsseldorf logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu targo bank"></a>
-							<img src="./img/references_targobank.jpg" loading="lazy" alt="targo bank logo">
+							<div>
+								<img src="./img/references_targobank.jpg" loading="lazy" width="309" height="174"
+									alt="targo bank logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu vanacken"></a>
-							<img src="./img/references_van_acken_druck.jpg" loading="lazy"
-								alt="vanacken druckerei & verlag logo">
+							<div>
+								<img src="./img/references_van_acken_druck.jpg" loading="lazy" width="309" height="174"
+									alt="vanacken druckerei & verlag logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu vanacken"></a>
-							<img src="./img/references_van_acken_fundraising.jpg" loading="lazy"
-								alt="vanacken fundraising logo">
+							<div>
+								<img src="./img/references_van_acken_fundraising.jpg" loading="lazy" width="309"
+									height="174" alt="vanacken fundraising logo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu volvo"></a>
-							<img src="./img/references_volvo.jpg" loading="lazy" alt="volvo">
+							<div>
+								<img src="./img/references_volvo.jpg" loading="lazy" width="309" height="174"
+									alt="volvo">
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="uk-card bg-white uk-flex uk-flex-center">
 							<a href="#" target="_blank" class="uk-position-cover uk-position-z-index"
 								aria-label="Gehe zu volkswagen"></a>
-							<img src="./img/references_vw.jpg" loading="lazy" alt="volkswagen logo">
+							<div>
+								<img src="./img/references_vw.jpg" loading="lazy" width="309" height="174"
+									alt="volkswagen logo">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1378,8 +1483,8 @@
 	<footer class="footer" id="kontakt">
 		<div class="footer-top uk-text-center">
 			<div class="uk-container">
-				<h2>So erreichen Sie uns</h2>
-				<div class="uk-child-width-1-3" data-uk-grid>
+				<h2 data-uk-scrollspy="cls: uk-animation-slide-top; delay: 350">So erreichen Sie uns</h2>
+				<div class="uk-child-width-1-3" data-uk-grid  data-uk-scrollspy="target: > div;cls: uk-animation-fade; delay: 120">
 					<div>
 						<div class="addresse">
 							<div class="uk-flex uk-flex-column">
@@ -1418,7 +1523,7 @@
 			</div>
 		</div>
 		<div class="footer-middle">
-			<iframe title="BMB Druck & Service GmbH" width="100%" height="400" style="border:0;"
+			<iframe title="BMB Druck & Service GmbH" height="400" style="border:0;"
 				src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=D%C3%BCsseldorf,%20Ronsdorfer%20Stra%C3%9Fe%2055+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 		</div>
 		<div class="footer-bottom bg-gray">

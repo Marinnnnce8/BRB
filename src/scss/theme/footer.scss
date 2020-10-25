@@ -40,12 +40,6 @@
         }
     }
 
-    // @media (min-width: $breakpointTabletPortraitMax) {
-    //     .uk-container {
-    //         padding-left: 20px;
-    //         padding-right: 20px;
-    //     }
-    // }
     @media (min-width: $breakpointMobile) {
         padding: 82px 0 84px;
 
@@ -125,6 +119,12 @@
         .uk-grid>.uk-grid-margin {
             margin-top: 92px;
         }
+    }
+}
+
+.footer-middle {
+    iframe {
+        width: 100%;
     }
 }
 
@@ -220,7 +220,7 @@
         .uk-flex {
             justify-content: center;
 
-            a, {
+            a {
                 &:nth-of-type(-n + 3) {
                     margin-bottom: 45px;
                 }
